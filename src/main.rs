@@ -35,6 +35,10 @@ fn main() -> std::io::Result<()> {
         }
     };
 
+    // Evaluate the expression before compiling (for debugging/testing)
+    let interpreted_result = eval(&expr);
+    println!("Interpreted Result: {}", interpreted_result);
+
     let result = compile_expr(&expr); // Use compile_expr from compiler.rs
 
     let asm_program = format!("
