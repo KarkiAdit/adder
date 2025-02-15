@@ -1,1 +1,5 @@
+# Ignore the target directory (Rust build output)
 /target
+
+# Ignore all object files (`.o` files)
+*.o
