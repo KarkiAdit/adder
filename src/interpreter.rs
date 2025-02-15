@@ -3,6 +3,7 @@ use sexp::Atom::*;
 use crate::datatypes::Expr;
 
 /// Evaluates an `Expr` recursively
+#[allow(dead_code)]
 pub fn eval(e: &Expr) -> i32 {
     match e {
         Expr::Num(n) => *n,
